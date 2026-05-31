@@ -1,0 +1,1 @@
+./mega-decipher.exe "mega://enc2?<your_https://mega.nz/file/AmFElZ4D>""

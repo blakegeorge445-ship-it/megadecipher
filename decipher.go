@@ -18,7 +18,7 @@ var (
 )
 
 func Decipher(url string) (string, error) {
-	re := regexp.MustCompile("^mega://(f?)enc(2?)\\?([A-Za-z0-9-_,]+)")
+	re := regexp.MustCompile(`^mega://(f?)enc(2?)\?([A-Za-z0-9-_,]+)`)
 
 	matched := re.MatchString(url)
 	if !matched {
