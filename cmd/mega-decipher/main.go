@@ -9,6 +9,11 @@ import (
 )
 
 func main() {
+	if len(os.Args) < 2 {
+		fmt.Fprintln(os.Stderr, "Usage: mega-decipher <ciphered-url>")
+		os.Exit(1)
+	}
+
 	url := os.Args[1]
 	fmt.Println("Ciphered link =>", url)
 
